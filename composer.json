@@ -7,10 +7,25 @@
     ],
     "homepage": "https://github.com/mix-code/jawaly-sms",
     "license": "MIT",
+    "support": {
+        "email": "mixcode2025@gmail.com",
+        "issues": "https://github.com/mix-code/jawaly-sms/issues",
+        "source": "https://github.com/mix-code/jawaly-sms"
+    },
     "authors": [
         {
             "name": "MixCode",
             "email": "mixcode2025@gmail.com",
+            "role": "Company"
+        },
+        {
+            "name": "Mohamed Alaa El-Din",
+            "email": "moaalaa16@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Hamza Omar Mohamed",
+            "email": "hamzalilomar92@gmail.com",
             "role": "Developer"
         }
     ],
