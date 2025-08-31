@@ -32,8 +32,8 @@ class JawalySms
             if (($data['code'] ?? null) === 200) {
                 return SmsResponse::success(data: [
                     'senders' => collect($data['items']['data'])
-                        ->when($namesOnly, fn($collection) => $collection->pluck('sender_name'))
-                        ->unless($namesOnly, fn($collection) => $collection->map(fn($sender) => $sender))
+                        ->when($namesOnly, fn ($collection) => $collection->pluck('sender_name'))
+                        ->unless($namesOnly, fn ($collection) => $collection->map(fn ($sender) => $sender))
                         ->toArray(),
                 ]);
             }
@@ -109,6 +109,7 @@ class JawalySms
             }
 
             $errorMessage = $data['messages'][0]['err_text'] ?? $data['message'] ?? 'Error sending message';
+
             return SmsResponse::error($errorMessage, $response->status(), $data);
         } catch (RequestException $e) {
             return SmsResponse::error(

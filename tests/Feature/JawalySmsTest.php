@@ -17,7 +17,7 @@ it('can fetch senders successfully', function () {
         ], 200),
     ]);
 
-    $sms = new JawalySms();
+    $sms = new JawalySms;
 
     $response = $sms->senders(namesOnly: true);
 
@@ -34,7 +34,7 @@ it('can check balance successfully', function () {
         ], 200),
     ]);
 
-    $sms = new JawalySms();
+    $sms = new JawalySms;
 
     $response = $sms->balance();
 
@@ -50,7 +50,7 @@ it('can send sms successfully', function () {
         ], 200),
     ]);
 
-    $sms = new JawalySms();
+    $sms = new JawalySms;
 
     $response = $sms->sendSMS('Hello', ['1234567890'], 'TestSender');
 
@@ -68,7 +68,7 @@ it('handles error when sending sms', function () {
         ], 400),
     ]);
 
-    $sms = new JawalySms();
+    $sms = new JawalySms;
 
     $response = $sms->sendSMS('Hello', ['invalid'], 'TestSender');
 
