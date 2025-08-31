@@ -1,9 +1,19 @@
 {
     "name": "mix-code/jawaly-sms",
-    "description": "This is my package jawaly-sms",
+    "description": "Laravel and PHP package to send SMS notifications using the 4jawaly SMS API gateway.",
     "keywords": [
         "mix-code",
-        "jawaly-sms"
+        "4jawaly",
+        "sms",
+        "laravel",
+        "php",
+        "api",
+        "gateway",
+        "messaging",
+        "notification",
+        "text-message",
+        "sms-integration",
+        "4jawaly-sms"
     ],
     "homepage": "https://github.com/mix-code/jawaly-sms",
     "license": "MIT",
